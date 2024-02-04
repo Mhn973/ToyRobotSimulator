@@ -4,7 +4,7 @@ import RobotSimulator from "./RobotSimulator";
 import Buttons from "./Buttons";
 
 function TableTop() {
-  const [position, setPosition] = useState({ x: 0, y: 0, direction: "East" });
+  const [position, setPosition] = useState({ x: 0, y: 0, direction: "NORTH" });
 
   const rotateDirection = {
     EAST: "90deg",
@@ -12,7 +12,7 @@ function TableTop() {
     NORTH: "360deg",
     SOUTH: "180deg",
   };
-  const style = {
+  let style = {
     left: `${position.x * 23}%`,
     bottom: `${position.y * 23}%`,
     transform: `rotate(${rotateDirection[position.direction]})`,
