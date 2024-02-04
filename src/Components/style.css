@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  /* background-color: aquamarine; */
+  width: 100vw;
+  height: 100svh;
+  justify-content: center;
+  align-items: center;
+}
+/* .table-top {
+  box-sizing: content-box;
+  border: 2px solid black;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.robot {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: aliceblue; 
+  transform: translate(10%, -10%);
+} */
+.table-top {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  border: 2px solid black;
+}
+
+.robot-div {
+  position: absolute;
+  font-size: 20px;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 10rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  height: 1rem;
+  width: 4rem;
+}
+
+button {
+  height: 2rem;
+  width: 5rem;
+}
